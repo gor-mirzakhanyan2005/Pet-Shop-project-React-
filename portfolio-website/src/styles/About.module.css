@@ -1,0 +1,131 @@
+@media screen and (max-width: 895px){
+    .aboutBackground{
+        width: 200px;
+    }
+
+    .aboutBackground h1{
+        text-align: center;
+        transform: scale(70%);
+    }
+
+    .aboutBackground .aboutImages{
+       display: none;
+    }
+
+    .aboutBackground .aboutTextContainer{
+        display: flex;
+        margin-top: 0px;
+        width: 874.5px;
+        height: 200px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutBackground .aboutTextContainer p{
+        width: 500px;
+    }
+
+    .aboutBackground .aboutButtonContainer{
+        display: flex;
+        margin-top: 20px;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.aboutBackground{
+    z-index: 6;
+    width: 100%;
+    height: 670px;
+    background-color: rgb(44, 109, 44);
+    display: flex;
+    justify-content: center;
+}
+
+.aboutBackground h1{
+    margin-top: 60px;
+    color: #fff;
+    font-size: 48px;
+    left: 28.25%;
+}
+
+.aboutTextContainer{
+    text-align: left;
+    width: 400px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.aboutButtonContainer{
+    margin-top: 20px;
+}
+
+.aboutImages{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -180px;
+}
+
+.aboutImages li{
+    float: left;
+    clear: left;
+}
+
+.aboutImages li:nth-child(1){
+    transform: rotate(-10deg);
+}
+
+.aboutImages li:nth-child(2){
+    margin-top: -80px;
+    margin-left: 50px;
+    transform: rotate(5deg);
+}
+
+.aboutBackground img{
+    width: 250px;
+    border: 5px #fff solid;
+    outline: 2px #000 solid;
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+
+.learnMore{
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: rgb(27, 70, 27);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.learnMore:hover{
+    border: 2px solid rgb(27, 70, 27);
+    background-color: #fff;
+    color: rgb(27, 70, 27);
+}
+
+.goBack{
+    margin-left: 42px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid rgb(27, 70, 27);
+    background-color: #fff;
+    color: rgb(27, 70, 27);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.goBack:hover{
+    border: 2px solid #fff;
+    background-color: rgb(27, 70, 27);
+    color: #fff;
+}

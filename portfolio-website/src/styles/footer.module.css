@@ -1,0 +1,46 @@
+.footerSection{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(44, 109, 44);
+}
+
+.linkUl{
+    position: absolute;
+    display: flex;
+    margin-top: 50px;
+    margin-left: -10px;
+    font-size: 24px;
+    height: 92.5px;
+    padding-top: 25px;
+    padding-left: 47.5px;
+    gap: 22px;
+}
+
+.linkUl a{
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.linkUl a:hover{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(44, 109, 44);
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: 0.25s;
+}
+
+.footerSection h3{
+    opacity: 25%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 200px;
+    color: #fff
+}

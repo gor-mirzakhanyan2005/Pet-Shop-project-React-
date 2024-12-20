@@ -1,0 +1,172 @@
+@media screen and (max-width: 700px){
+    .aOSection h1{
+        margin-top: 0;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Kanit", sans-serif;
+    }
+
+    .aOSection .petCard{
+        width: 400px;
+        height: 500px;
+    }
+
+    .aOSection .allCardImg{
+        width: 400px;
+        height: 340px;
+        margin-top: -40px;
+    }
+
+    .aOSection .petCard h2{
+        margin-top: 315px;
+        font-size: 36px;
+    }
+
+    .aOSection .petCard p{
+        margin-top: 365px;
+        font-size: 18px;
+    }
+
+    .pageSelectors{
+        display: flex;
+        position: static;
+        margin: 20px auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+.aOSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 24px 33px;
+    margin-bottom: 75px;
+}
+
+.aOSection h1{
+    margin: 75px 0;
+    text-align: center;
+    position: absolute;
+    font-size: 48px;
+    font-family: "Kanit", sans-serif;
+}
+
+.aOContainer{
+    border-top: 2px solid rgb(44, 109, 44);
+    border-bottom: 2px solid rgb(44, 109, 44);
+    text-align: center;
+    justify-content: center;
+    padding: 20px 20px 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90%;
+    margin-top: 2.5%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.aOContainer ul{
+    margin-top: 80px;
+    margin-left: 39.5px;
+    padding-bottom: 40px;
+}
+
+.petCard{
+    cursor: pointer;
+    color: black;
+    margin-top: 58.5px;
+    width: 225px;
+    height: 275px;
+    border: 2px solid rgb(44, 109, 44);
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.25s;
+}
+
+.allCardImg{
+    border-top-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    align-items: center;
+    width: 222.25px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.petCard:hover{
+    scale: 105%;
+}
+
+.petCard h2{
+    position: absolute;
+    margin: 155px 20px;
+    font-size: 16px;
+}
+
+.petCard p{
+    position: absolute;
+    margin: 180px 20px;
+    font-size: 12px;
+    width: 200px;
+    text-align: left;
+}
+
+.petCard img{
+    margin-top: -50px;
+    width: 100%;
+}
+
+.petCard h3{
+    color: white;
+    position: absolute;
+    background-color: rgb(44, 109, 44);
+    padding: 3px 32.5px;
+    margin: 115px 222.5px;
+    border-bottom-right-radius: 10px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+
+.pageSelectors{
+    height: 50px;
+    margin-top: -85px;
+    width: 100%;
+    display: flex;
+    position: static;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageSelectorUl{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageSelectorUl:first-child{
+    padding-left: 39.5px;
+}
+
+.pageSelectorBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: outset 5px rgb(44, 109, 44);
+    background-color: rgb(255, 255, 255);
+    transition: 0.15s;
+}
+
+.pageSelectorBtn:hover{
+    transform: scale(115%);
+    border: inset 5px rgb(255, 255, 255);
+    background-color: rgb(44, 109, 44);
+}

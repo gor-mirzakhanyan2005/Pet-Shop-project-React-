@@ -1,0 +1,91 @@
+.uppermiddle{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 24px 33px;
+    text-align: center;
+    box-shadow: inset 0px 2px 10px black;
+}
+
+.recentOffersSection{
+    display: flex;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.recentOffersSection ul{
+    margin-top: -27.5px;
+    margin-left: 40px;
+    padding-bottom: 22px;
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+}
+
+.recentCard{
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    margin-top: 58.5px;
+    width: 350px;
+    height: 350px;
+    outline: 5px solid rgb(44, 109, 44);
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: auto;
+    z-index: 2;
+    transition: 0.25s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.recentCard:hover{
+    scale: 105%;
+}
+
+.recentCard h2{
+    position: absolute;
+    margin: 210px 20px;
+}
+
+.cardImg{
+    margin-top: -0.15px;
+    margin-left: -0.15px;
+    position: absolute;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    width: 350.75px;
+    height: 198px;
+    position: absolute;
+    overflow: hidden;
+    align-items: center;
+    background-color: rgb(44, 109, 44);
+}
+
+.cardImg img{
+    position: absolute;
+    width: 350px;
+    margin-left: -175px;
+    margin-top: -20px;
+}
+
+.recentCard p{
+    position: absolute;
+    margin: 250px 20px;
+    width: 200px;
+    text-align: left;
+}
+
+.recentCard h3{
+    color: white;
+    position: absolute;
+    background-color: rgb(44, 109, 44);
+    padding: 3px 32.5px;
+    margin: 317.25px 224.75px;
+    border-bottom-right-radius: 10px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
