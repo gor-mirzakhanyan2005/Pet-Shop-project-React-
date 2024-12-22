@@ -39,7 +39,7 @@
     z-index: 6;
     width: 100%;
     height: 670px;
-    background-color: rgb(44, 109, 44);
+    background-color: var(--color-green-backgrounds);
     display: flex;
     justify-content: center;
 }
@@ -87,10 +87,10 @@
 
 .aboutBackground img{
     width: 250px;
-    border: 5px #fff solid;
+    border: 5px var(--color-white-elements) solid;
     outline: 2px #000 solid;
     padding-bottom: 80px;
-    background-color: #fff;
+    background-color: var(--color-white-elements);
 }
 
 .learnMore{
@@ -98,7 +98,7 @@
     height: 50px;
     border-radius: 15px;
     border: 2px solid #fff;
-    background-color: rgb(27, 70, 27);
+    background-color: var(--color-elements);
     color: #fff;
     font-weight: 500;
     font-size: 16px;
@@ -106,9 +106,9 @@
 }
 
 .learnMore:hover{
-    border: 2px solid rgb(27, 70, 27);
+    border: 2px solid var(--color-white-elements);
     background-color: #fff;
-    color: rgb(27, 70, 27);
+    color: #000;
 }
 
 .goBack{
@@ -116,9 +116,9 @@
     width: 150px;
     height: 50px;
     border-radius: 15px;
-    border: 2px solid rgb(27, 70, 27);
-    background-color: #fff;
-    color: rgb(27, 70, 27);
+    border: 2px solid var(--color-elements);
+    background-color: var(--color-white-elements);
+    color: var(--color-elements);
     font-size: 16px;
     font-weight: 500;
     transition: 0.25s;
@@ -126,6 +126,6 @@
 
 .goBack:hover{
     border: 2px solid #fff;
-    background-color: rgb(27, 70, 27);
+    background-color: var(--color-green-elements);
     color: #fff;
 }

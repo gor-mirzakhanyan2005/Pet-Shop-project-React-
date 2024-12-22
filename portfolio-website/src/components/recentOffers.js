@@ -1,7 +1,8 @@
 import React from 'react';
+import { useState } from 'react';
 import styles from '../styles/recentOffers.module.css';
 
-function recentOffers() {
+function RecentOffers({darkMode}) {
     const recentOfferCardData = [
 
         {
@@ -23,6 +24,7 @@ function recentOffers() {
         },
 
     ];
+
   return (
     <section className={styles.uppermiddle}>
         <div className={styles.recentOffersSection}>
@@ -47,4 +49,4 @@ function recentOffers() {
   )
 }
 
-export default recentOffers;
+export default RecentOffers;

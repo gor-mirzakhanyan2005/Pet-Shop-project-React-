@@ -3,7 +3,7 @@
     height: 350px;
     display: flex;
     justify-content: center;
-    background-color: rgb(44, 109, 44);
+    background-color: var(--color-green-backgrounds);
 }
 
 .linkUl{
@@ -28,11 +28,11 @@
 .linkUl a:hover{
     font-size: 24px;
     text-decoration: none;
-    color: rgb(44, 109, 44);
+    color: var(--color-text);
     padding: 10px;
     padding-top: 5px;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: var(--color-elements);
     transition: 0.25s;
 }
 

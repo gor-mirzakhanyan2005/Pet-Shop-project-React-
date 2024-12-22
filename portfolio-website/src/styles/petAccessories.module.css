@@ -1,12 +1,15 @@
 .accessorySection {
-    height: 100%;
+    height: 615px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-white-backgrounds);
     display: flex;
     text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
 }
 
 .accessorySection h1{
+    color: var(--color-text);
     width: 100%;
     margin: -10px 0px;
     text-align: center;
@@ -16,10 +19,10 @@
 }
 
 .accessoryContainer{
-    box-shadow: inset 0px 2px 10px black;
+    box-shadow: inset 0px 2px 10px var(--color-shadows);
     margin-top: 120px;
     padding-bottom: 50px;
-    background-color: #fff;
+    background-color: var(--color-white-backgrounds-2);
     width: 100%;
 }
 
@@ -30,14 +33,14 @@
 .accessoryCard{
     position: relative;
     cursor: pointer;
-    color: black;
+    color: var(--color-text);
     margin-top: 58.5px;
     width: 350px;
     height: 275px;
-    border: 5px solid rgb(44, 109, 44);
+    border: 5px solid var(--color-elements);
     box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0);
-    background-color: white;
-    border-radius: 10px;
+    background-color: var(--color-white-backgrounds);
+    border-radius: 5px;
     overflow: hidden;
     z-index: 2;
     transition: 0.25s;
@@ -74,9 +77,9 @@
 }
 
 .accessoryCard h3{
-    color: white;
+    color: #fff;
     position: absolute;
-    background-color: rgb(44, 109, 44);
+    background-color: var(--color-elements);
     padding: 3px 32.5px;
     margin: 235px -5px;
     font-family: "Kanit", sans-serif;

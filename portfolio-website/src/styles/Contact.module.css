@@ -13,7 +13,7 @@
     margin: 20px auto;
     width: 550px;
     height: 450px;
-    background-color: rgb(44, 109, 44);
+    background-color: var(--color-green-backgrounds);
     border: 2px #fff solid;
     box-shadow: 0px 2.5px 10px #000;
     display: flex;
@@ -41,7 +41,7 @@
 
 
 .closeButton{
-    background-color: rgb(44, 109, 44);
+    background-color: var(--color-elements);
     margin-top: -350px;
     margin-left: 450px;
     position: absolute;
@@ -56,7 +56,7 @@
 
 .closeButton:hover{
     background-color: #fff;
-    color: rgb(44, 109, 44);
-    border: 2px solid rgb(44, 109, 44);
+    color: var(--color-white-backgrounds);
+    border: 2px solid var(--color-elements);
     scale: 105%;
 }

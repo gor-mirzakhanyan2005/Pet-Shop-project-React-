@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../styles/Navigation.module.css';
-import Contact from './contactModal.js';
+import DarkModeButton from './DarkModeToggle';
 import { useState } from 'react';
 
-const Header = ({contactToggle, aboutToggle, listingsToggle}) => {
+const Header = ({contactToggle, aboutToggle, listingsToggle, darkMode, setDarkMode}) => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -28,6 +28,12 @@ const Header = ({contactToggle, aboutToggle, listingsToggle}) => {
           </li>
           <li>
             <a href="#" onClick={()=> contactToggle()}>Contact</a>
+          </li>
+          <li>
+          <DarkModeButton
+              isChecked={darkMode}
+              handleChange={() => setDarkMode(!darkMode)}
+        />
           </li>
         </ul>
         </div>

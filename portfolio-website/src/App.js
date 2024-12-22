@@ -1,5 +1,5 @@
 import Navigation from "./components/Navigation.js";
-import RecentOffers from "./components/recentOffers.js";
+import RecentOffers from "./components/RecentOffers.js";
 import AllOffers from "./components/offer pages/allOffers.js";
 import AllOffers2 from "./components/offer pages/allOffers2.js";
 import AccessorySection from "./components/petAccessories.js";
@@ -7,9 +7,10 @@ import Footer from "./components/Footer.js";
 import Contact from "./components/contactModal.js";
 import About from "./components/About.js";
 import Add from "./components/AddListing.js";
+import DarkModeButton from "./components/DarkModeToggle.js";
 import Testimonials from "./components/Testimonials.js";
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import './App.module.css';
 import { use } from "react";
 
@@ -19,6 +20,7 @@ function App(props) {
    const [contact, setContact] = useState(false)
    const [about, setAbout] = useState(false);
    const [listings, setListings] = useState(false);
+   const [darkMode, setDarkMode] = useState(false);
 
    const contactToggle = () => {
       setContact(!contact);
@@ -34,8 +36,10 @@ function App(props) {
       setListings(!listings);
       setContact(false);
       setAbout(false);
-
    }
+   const toggleDarkMode = function() {
+      setDarkMode(!darkMode);
+    }
 
    const testimonialData = [
 
@@ -66,21 +70,32 @@ function App(props) {
 
   return (
     <BrowserRouter>
-    <>
+    <div data-theme={darkMode ? "dark" : "light"}>
     {contact && <Contact contactToggle={contactToggle}/>}
     {listings && <Add listingsToggle={listingsToggle}/>}
-    {!listings && <Navigation contactToggle={contactToggle} aboutToggle={aboutToggle} listingsToggle={listingsToggle}/>}
-    {about && <About aboutToggle={aboutToggle}/>}
-    {about && <About /> && <Testimonials testimonialData={testimonialData}/>}
-    {about && <About /> && <Testimonials testimonialData={testimonialData}/> && <Footer />}
-    {!listings && !about && <RecentOffers />}
-    <Routes>
-    {!listings && !about && <Route path="/" element={<AllOffers />} />}
-    {!listings && !about && <Route path="/page2" element={<AllOffers2 />}></Route>}
-    </Routes>
-    {!listings && !about && <AccessorySection />}
-    {!listings && !about && <Footer />}
+    {!listings &&
+    <Navigation
+    contactToggle={contactToggle}
+    aboutToggle={aboutToggle}
+    listingsToggle={listingsToggle}
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}/>
+    }
+    {about && (
+    <>
+      <About darkMode={darkMode} aboutToggle={aboutToggle}/>
+      <Testimonials darkMode={darkMode} testimonialData={testimonialData}/>
+      <Footer />
     </>
+   )}
+    {!listings && !about && <RecentOffers darkMode={darkMode}/>}
+    <Routes>
+    {!listings && !about && <Route path="/" element={<AllOffers darkMode={darkMode}/>} />}
+    {!listings && !about && <Route path="/page2" element={<AllOffers2 darkMode={darkMode}/>}></Route>}
+    </Routes>
+    {!listings && !about && <AccessorySection darkMode={darkMode}/>}
+    {!listings && !about && <Footer darkMode={darkMode}/>}
+    </div>
     </BrowserRouter>
   );
 }

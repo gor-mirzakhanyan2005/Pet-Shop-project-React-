@@ -7,6 +7,35 @@
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: 0.15s;
+}
+
+[data-theme="light"] {
+  --color-text: #000;
+  --color-green-text: rgb(44, 109, 44);
+  --color-elements: rgb(44, 109, 44);
+  --color-green-backgrounds: rgb(44, 109, 44);
+  --color-white-backgrounds: #fff;
+  --color-white-backgrounds-2: #fff;
+  --color-white-elements: #fff;
+  --color-shadows: rgba(0, 0, 0, 0.2);
+  --color-darkmode-background: rgb(0, 174, 255);
+  --color-darkmode-icon: rgb(255, 225, 0);
+  --color-darkmode-icon2: rgba(0, 0, 0, 0);
+}
+
+[data-theme="dark"]{
+  --color-white-backgrounds: rgb(13, 17, 23);
+  --color-white-backgrounds-2: rgb(0, 0, 0);
+  --color-text: #fff;
+  --color-green-text: rgb(13, 189, 139);
+  --color-elements: rgb(13, 189, 139);
+  --color-white-elements: #fff;
+  --color-green-backgrounds: rgb(13, 17, 23);
+  --color-shadows: rgba(0, 0, 0, 0);
+  --color-darkmode-background: rgb(0, 4, 62);
+  --color-darkmode-icon: rgb(255, 255, 255);
+  --color-darkmode-icon2: rgb(0, 4, 62);
 }
 
 body {
