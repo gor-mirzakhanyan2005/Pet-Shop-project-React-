@@ -17,10 +17,10 @@ function DarkModeToggle({handleChange}) {
               onClick={handleClick}
             >
               <div className={styles.darkModeIcon}>
-                
+
               </div>
               <div className={styles.darkModeIcon2}>
-                
+
               </div>
     </button>
   )
